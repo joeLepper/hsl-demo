@@ -8,7 +8,28 @@
 
     <div class="slider-container">
       <ul class="slider-list">
-        
+
+        <li class="slider-list-item">
+
+          <div class="radio-holder">
+            <label id="radio-label" for="notation-buttons">HSL</label>
+            <input type="radio" name="notation" value="0" id="hsl-notation-button" class="notation-buttons" checked>
+          </div>
+
+          <div class="radio-holder">
+            <label id="radio-label" for="notation-buttons">RGB</label>
+            <input type="radio" name="notation" value="1" id="rgb-notation-button" class="notation-buttons">
+          </div>
+
+          <!--div class="radio-holder">
+            <label id="radio-label" for="notation-buttons">HEX</label>
+            <input type="radio" name="notation" value="HEX" id="hex-notation-button" class="notation-buttons">
+          </div-->
+
+        </li>
+
+        <br/>
+
         <li class="slider-list-item">
           <label id="row-label" for="row-slider"></label><br/>
           <input data-controls="Rows" type="range" id="row-slider" min="1" max="50" class="slider">
@@ -19,24 +40,53 @@
           <input data-controls="Columns" type="range" id="column-slider" min="1" max="50" class="slider">
         </li>
 
-        <li class="slider-list-item">
+        <!--- HSL SLIDERS -->
+
+        <li class="slider-list-item" id="hue-slider-container">
           <label id="color-label" for="color-slider"></label><br/>
           <input data-controls="Base Hue" type="range" id="color-slider" min="1" max="360" class="slider">
         </li>
 
-        <li class="slider-list-item">
+        <li class="slider-list-item" id="incr-slider-container">
           <label id="color-increment-label" for="color-increment-slider"></label><br/>
           <input data-controls="Hue Incrementation" type="range" id="color-increment-slider" min="1" max="360" class="slider">
         </li>
 
-        <li class="slider-list-item">
+        <li class="slider-list-item" id="satch-slider-container">
           <label id="satch-mod-label" for="satch-mod-slider"></label><br/>
           <input data-controls="Saturation Modification" type="range" id="satch-mod-slider" min="1" max="50" class="slider">
         </li>
 
-        <li class="slider-list-item">
+        <li class="slider-list-item" id="lite-slider-container">
           <label id="lite-mod-label" for="lite-mod-slider"></label><br/>
           <input data-controls="Light Modification" type="range" id="lite-mod-slider" min="1" max="50" class="slider">
+        </li>
+
+        <!--- RGB SLIDERS -->
+
+        <li class="slider-list-item" id="red-slider-container" hidden>
+          <label id="red-mod-label" for="red-mod-slider"></label><br/>
+          <input data-controls="Red" type="range" id="red-mod-slider" min="1" max="255" class="slider">
+        </li>
+
+        <li class="slider-list-item" id="green-slider-container" hidden>
+          <label id="green-mod-label" for="green-mod-slider"></label><br/>
+          <input data-controls="Green" type="range" id="green-mod-slider" min="1" max="255" class="slider">
+        </li>
+
+        <li class="slider-list-item" id="blue-slider-container" hidden>
+          <label id="blue-mod-label" for="blue-mod-slider"></label><br/>
+          <input data-controls="Blue" type="range" id="blue-mod-slider" min="1" max="255" class="slider">
+        </li>
+
+        <li class="slider-list-item" id="color-incr-slider-container" hidden>
+          <label id="color-mod-label" for="color-incr-slider"></label><br/>
+          <input data-controls="Color Increment" type="range" id="color-incr-slider" min="1" max="255" class="slider">
+        </li>
+
+        <li class="slider-list-item" id="color-mod-slider-container" hidden>
+          <label id="color-mod-label" for="color-mod-slider"></label><br/>
+          <input data-controls="Modify" type="range" id="color-mod-slider" min="1" max="100" class="slider">
         </li>
 
       </ul>
